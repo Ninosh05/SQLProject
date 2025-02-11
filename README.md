@@ -6,10 +6,15 @@ Cleaning the CSV Files: The initial step involves using Python to clean the covi
 Date Formatting: I created a Python file that handles date formatting to ensure consistency between the two datasets.
 Handling Population Issues: There was an issue with the population column in the coviddeathfixed dataset, where missing or incorrect values needed correction. I’ve added a file named secondround to address these specific issues.
 Data Import: Once cleaned using Python, the data is ready for analysis and further processing.
+
+
 Step 2: SQL Data Handling (MySQL Workbench)
 After cleaning the data, the next step involves importing the data into MySQL Workbench for analysis.
 
 Handling NULL and Empty Values: The coviddeathfixed and covidvaccinationscleaned tables required specific updates to handle cases where the continent field was missing or where '0' or empty values existed.
+
+
+
 SQL Operations:
 I performed a variety of SQL operations to analyze COVID cases, death rates, population data, and vaccination data.
 Several queries were used to calculate death likelihood, infection rates, and vaccination percentages across locations.
@@ -19,6 +24,9 @@ Python Files: Used for data cleaning, handling date formats, and fixing populati
 CSV Files: The cleaned datasets are saved as CSV files for easy reuse.
 SQL Queries: The main analysis is done in SQL Workbench, with the code adjusted for MySQL Workbench rather than other SQL environments.
 Visualizations: The final analysis can be used to generate insights on COVID vaccination rates, death rates, and infection rates across different locations.
+
+
+
 Step-by-Step Workflow:
 Use the Python files to clean the data, starting with date formatting and handling any population column issues using the secondround file.
 Import the cleaned data into MySQL Workbench.
